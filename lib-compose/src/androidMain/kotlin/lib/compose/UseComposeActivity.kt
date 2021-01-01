@@ -2,9 +2,9 @@ package lib.compose
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.ui.core.setContent
-import androidx.ui.foundation.Text
-import androidx.ui.layout.Column
+import androidx.compose.foundation.layout.Column
+import androidx.compose.material.Text
+import androidx.compose.ui.platform.setContent
 
 class UseComposeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

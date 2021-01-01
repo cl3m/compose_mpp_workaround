@@ -34,6 +34,18 @@ android {
     }
 }
 
+// workaround for https://youtrack.jetbrains.com/issue/KT-43944
+android {
+    configurations {
+        create("androidTestApi")
+        create("androidTestDebugApi")
+        create("androidTestReleaseApi")
+        create("testApi")
+        create("testDebugApi")
+        create("testReleaseApi")
+    }
+}
+
 kotlin {
     android()
     sourceSets {
@@ -43,6 +55,8 @@ kotlin {
 
                 implementation("androidx.compose.runtime:runtime:$ANDROID_COMPOSE_VERSION")
                 implementation("androidx.compose.foundation:foundation:$ANDROID_COMPOSE_VERSION")
+                implementation("androidx.compose.material:material:$ANDROID_COMPOSE_VERSION")
+
             }
         }
     }
@@ -55,7 +69,7 @@ configurations {
     }
 }
 dependencies {
-    "composeCompiler"("androidx.compose:compose-compiler:$ANDROID_COMPOSE_VERSION")
+    "composeCompiler"("androidx.compose.compiler:compiler:$ANDROID_COMPOSE_VERSION")
 }
 android {
     afterEvaluate {

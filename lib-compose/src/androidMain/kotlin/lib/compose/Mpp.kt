@@ -1,9 +1,7 @@
 package lib.compose
 
-import androidx.compose.Composable
-import androidx.ui.foundation.Text
-import androidx.ui.graphics.Color
-import androidx.ui.layout.Column
+import androidx.compose.runtime.Composable
+import androidx.compose.material.Text
 
 @Composable
 fun composeMpp() {
