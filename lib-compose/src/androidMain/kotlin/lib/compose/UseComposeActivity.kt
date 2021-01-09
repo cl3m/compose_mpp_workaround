@@ -13,7 +13,9 @@ class UseComposeActivity : AppCompatActivity() {
         setContent {
             Column {
                 Text("use Compose in MPP library:")
-                composeMpp()
+                val text = hello() //default value works
+                composeOk(text) //compose works
+                composeFail() //both does not, comment to avoid crash
             }
         }
 

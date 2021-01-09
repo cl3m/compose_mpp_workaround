@@ -1,5 +1,5 @@
 const val KOTLIN_VERSION = "1.4.21"
-const val ANDROID_GRADLE_PLUGIN = "7.0.0-alpha03"
+const val ANDROID_GRADLE_PLUGIN = "7.0.0-alpha04"
 
 //https://developer.android.com/jetpack/androidx/releases/compose
 const val ANDROID_COMPOSE_VERSION = "1.0.0-alpha09"
