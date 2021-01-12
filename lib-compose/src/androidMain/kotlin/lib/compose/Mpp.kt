@@ -19,7 +19,8 @@ actual fun composeOk(text: String) {
 }
 
 @Composable
-actual fun composeFail(text: String) {
+@Suppress("ACTUAL_FUNCTION_WITH_DEFAULT_ARGUMENTS")
+actual fun composeFail(text: String = "test") {
     Text("""
         src/androidMain/kotlin/lib/compose/Mpp.kt
         @Composable
